@@ -2,7 +2,15 @@
 shinyUI(fluidPage(
       navbarPage("Fantasy Draft Optimizer",
                   theme = mycss,
-                 tabPanel("Home", icon = icon('home'),
+                  tabPanel("Getting Started", icon = icon('home'),
+                           fluidPage(
+                             
+                           )),
+                 tabPanel("League Settings", icon = icon('tasks'),
+                          fluidPage(
+                            
+                          )),
+                 tabPanel("Draft Optimizer", icon = icon('bar-chart'),
                           fluidPage(
                             fluidRow(column(width = 4,
                                             selectInput('drafted',"Select a Player to Draft:", players),
@@ -12,11 +20,10 @@ shinyUI(fluidPage(
                             
                             br(),br(),       
                             fluidRow(column(width = 12,
-                                        DT::dataTableOutput("DraftBoard"))))))
-      
-      
-      
-      
-      ))
+                                            DT::dataTableOutput("DraftBoard")))))
+                 
+                 
+                 
+                 )))
 
 
