@@ -16,21 +16,37 @@ shinyServer(function(input, output, session) {
   })
   
   
-  #Update Draft Board
-  observeEvent(input$draftbutton, {
-            
-            if(vals$count < 13){
-              colcount <- 2
-            }
-        
-             board[colcount,vals$count] <- input$drafted
-                      
-            
-             output$DraftBoard <- DT::renderDataTable(DT::datatable(board,
-                                                                    options = list(pageLength = 25, dom = 't'), 
-                                                                    rownames = FALSE))
+  #Calculate Projected Fantasy Points Based on User's League Settings
+  observeEvent(input$calcproj, {
+    
+    
+    
+    
     
   })
+  
+  
+  
+  
+  
+  
+  
+  
+  #Update Draft Board
+  #observeEvent(input$draftbutton, {
+  #          
+  #          if(vals$count < 13){
+  #            colcount <- 1
+  #          }
+  #      
+  #           board[colcount, vals$count + 1] <- input$drafted
+  #                    
+  #          
+  #           output$DraftBoard <- DT::renderDataTable(DT::datatable(board,
+  #                                                                  options = list(pageLength = 25, dom = 't'), 
+  #                                                                  rownames = FALSE))
+  #  
+  #})
 
 
   

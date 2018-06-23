@@ -1,0 +1,9 @@
+---
+output: html_document
+---
+
+### Projections
+Using the check boxes below please select which source(s) you would like to use. You can select any number of sources. When multiple sources are selected, the opimizer will average the sources to derive the final projections. 
+
+
+

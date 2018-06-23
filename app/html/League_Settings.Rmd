@@ -1,0 +1,7 @@
+---
+output: html_document
+---
+
+Let the Optimizer know your league scoring settings, so that we can rank players according to YOUR league's scoring! You can click the "Reset" button to restore the scoring settings to default fantasy football scoring. 
+
+
